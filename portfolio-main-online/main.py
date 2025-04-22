@@ -8,7 +8,7 @@ app = Flask(__name__)
 #Запуск страницы с контентом
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return send_file('index.html')
 
 
 #Динамичные скиллы
